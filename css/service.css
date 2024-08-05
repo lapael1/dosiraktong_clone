@@ -71,7 +71,7 @@
 }
 .service-box-2:hover .service-bg {
   transform: rotate(2deg) scale(1.1);
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .service-box-3 {
   position: relative;
@@ -106,11 +106,11 @@
 }
 .service-box-title {
   position: relative;
-  font-size: 26px;
+  font-size: 2.6rem;
   margin-bottom: 3px;
 }
 .service-box-desc {
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 300;
   opacity: 0.8;
 }
@@ -125,7 +125,7 @@
   height: 40px;
   padding: 0 15px 0 20px;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   background: none;
@@ -139,14 +139,12 @@
   transform: translateY(-50%);
 }
 /* 반응형 */
-/* 1240 일때 */
 @media screen and (max-width: 1240px) {
   .service {
     height: auto;
     padding: 100px 0 80px;
   }
 }
-/* 1020 일때 */
 @media screen and (max-width: 1020px) {
   .service-title {
     font-size: 30px;
@@ -168,25 +166,38 @@
     max-width: 640px;
     height: 312px;
   }
-
-  @media screen and (max-width: 720px) {
-    .service-box-1 {
-      height: 100vw;
-      max-height: 640px;
-    }
-    .service-box-2,
-    .service-box-3 {
-      height: 45vw;
-      max-height: 312px;
-    }
-
-    .service-wrap a {
-      padding-bottom: 60px;
-    }
+}
+@media screen and (max-width: 720px) {
+  .service {
+    padding: 60px 0 80px;
   }
-  @media screen and (max-width: 480px) {
-    .no-br {
-      display: block;
-    }
+  .service-box-1 {
+    height: 100vw;
+    max-height: 640px;
   }
+  .service-box-2,
+  .service-box-3 {
+    height: 45vw;
+    max-height: 312px;
+  }
+
+  .service-wrap a {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .no-br {
+    display: block;
+  }
+  html{
+    font-size: 9px;
+  }
+  .service-box-wrap{
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 320px){
+    html{
+        font-size: 6px;
+    }
 }

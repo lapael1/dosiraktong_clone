@@ -11,9 +11,10 @@ window.addEventListener("load", function () {
       },
     },
   });
-  // business-modal 기능
+  // business-modal기능
   const businessModal = this.document.querySelector(".business-modal")
-  businessModal.addEventListener("click", function(){
+  businessModal.addEventListener("click",function(){
     businessModal.style.display = "none"
   })
+  
 });

@@ -41,12 +41,11 @@ text-decoration: underline;
     background-color: #666;
 }
 /* 반응형 */
-@media screen and(max-width:640px) {
+@media screen and (max-width:640px) {
     .footer-list span{
         display: block;
     }
     .footer-bar{
         display: none;
     }
-    
 }
